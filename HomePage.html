@@ -8,38 +8,39 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-dark.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>Jason Evans</title>
 </head>
 <body>
+    
+  <!-- Sidebar -->
+  <div class="w3-sidebar w3-bar-block w3-animate-left w3-black" style="display:none;z-index:5" id="mySidebar">
+    <button class=" w3-bar-item w3-button w3-large w3-black" onclick="w3_close()">&times;</button>
+    <a href="HomePage.html" class="w3-bar-item w3-button">Home</a>
+    <a href="About.html" class="w3-bar-item w3-button">About</a>
+    <a href="Portfolio.html" class="w3-bar-item w3-button">Portfolio</a>
+    <a href="Contact.html" class="w3-bar-item w3-button">Contact</a>
+  </div>
 
-    <!-- Sidebar -->
-    <div class="w3-sidebar w3-bar-block w3-animate-left w3-black" style="display:none;z-index:5" id="mySidebar">
-      <button class="w3-bar-item w3-button w3-large w3-black" onclick="w3_close()">Close &times;</button>
-      <a href="#" class="w3-bar-item w3-button">Home</a>
-      <a href="#" class="w3-bar-item w3-button">About</a>
-      <a href="#" class="w3-bar-item w3-button">Portfolio</a>
-      <a href="#" class="w3-bar-item w3-button">Contact</a>
+  
+  <!-- Page Content -->
+  <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer;" id="myOverlay"></div>
+  <div>
+    <button class="w3-cell w3-button w3-black w3-xlarge" onclick="w3_open()">&#9776;</button>
+    <div class="w3-cell container-fluid w3-large w3-black">
+      <h2 class="text-center">Jason Evans</h2>
     </div>
-    <!-- Page Content -->
-    <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
-    <div>
-      <button class="w3-cell w3-button w3-black w3-xxlarge" onclick="w3_open()">&#9776;</button>
-      <div class="w3-cell w3-container w3-black">
-        <h1>Jason Evans</h1>
+    <div class="w3-cell w3-black"><img src="images/new1.png" alt="" width="50px"></div>
       </div>
-      </div>
-    </div> 
-    <script>
-    function w3_open() {
-      document.getElementById("mySidebar").style.display = "block";
-      document.getElementById("myOverlay").style.display = "block";
-    }
-    function w3_close() {
-      document.getElementById("mySidebar").style.display = "none";
-      document.getElementById("myOverlay").style.display = "none";
-    }
-    </script>  
-    </body>
+  <script>
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+  </script>  
+  </body>
 </html>
